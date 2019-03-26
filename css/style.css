@@ -39,7 +39,7 @@ p.audio-title {
 
 .playlist-title-block h1.pt-left {
     display: flex;
-    padding: 100px 0px 30px 30px;
+    padding: 100px 0px 0px 30px;
     font-size: 6em;
     width: 48vw;
     justify-content: flex-end;
@@ -50,4 +50,22 @@ p.audio-title {
     flex-direction: column;
     align-items: flex-start;
     width: 52vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: HelveticaLight;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > img {
+    height: 20vh;
 }
