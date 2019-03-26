@@ -1,0 +1,39 @@
+@font-face {
+    font-family: HelveticaLight;
+    src: url(../fonts/HelveticaLight/HelveticaLight.woff);
+  }
+
+  @font-face {
+    font-family: HelveticaMedium;
+    src: url(../fonts/HelveticaMedium/HelveticaMedium.woff);
+  }
+
+  @font-face {
+    font-family: HelveticaRegular;
+    src: url(../fonts/HelveticaRegular/HelveticaRegular.woff);
+  }
+
+  @font-face {
+    font-family: HelveticaUltraLight;
+    src: url(../fonts/HelveticaUltraLight/HelveticaUltraLight.woff);
+  }
+
+  @font-face {
+    font-family: HelveticaBoldItalic;
+    src: url(../fonts/HelveticaBoldItalic/HelveticaBoldItalic.woff);
+  }
+
+  @font-face {
+    font-family: HelveticaHeavy;
+    src: url(../fonts/HelveticaHeavy/HelveticaHeavy.woff);
+  }
+
+  @font-face {
+    font-family: ;
+    src: url(../fonts);
+  }
+
+  @font-face {
+    font-family: ;
+    src: url(../fonts);
+  }

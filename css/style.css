@@ -1,6 +1,10 @@
 h1.playlist-title {
     text-align: center;
     font-size: 6em;
+    /* font-family: HelveticaUltraLight; */
+    /* font-family: HelveticaHeavyItalic; */
+    /* letter-spacing: 1vw; */
+    /* text-transform: uppercase; */
 }
 
 .playlist {
@@ -12,4 +16,9 @@ h1.playlist-title {
 .playlist audio {
     width: 80vw;
     margin: 1vh 0 1vh 0;
+}
+
+p.audio-title {
+    font-family: HelveticaHeavy;
+    font-size: 1.5em;
 }
