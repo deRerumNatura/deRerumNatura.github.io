@@ -1,55 +1,6 @@
-h1.playlist-title {
-    text-align: center;
-    font-size: 5em;
-    font-family: HelveticaUltraLight;
-    display: flex;
-    justify-content: center;
-    margin: 1vh 1vw;
-}
-
-.playlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.playlist-title-block {
-    height: 100vh;
-    display: flex;
-}
-
-.playlist audio {
-    /* width: 100px; */
-    margin: 1vh 0 1vh 0;
-}
-
-p.audio-title {
-    font-family: HelveticaHeavy;
-    font-size: 1.5em;
-}
-
-.accent {
-    display: block;
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    letter-spacing: 20px;
-    font-size: 1em;
-}
-
-.playlist-title-block h1.pt-left {
-    display: flex;
-    padding: 100px 0px 0px 30px;
-    font-size: 6em;
-    width: 48vw;
-    justify-content: flex-end;
-}
-
-.playlist-title-block h1.pt-right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 52vw;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 footer {
@@ -68,4 +19,20 @@ footer {
 
 .logo > img {
     height: 20vh;
+}
+
+section.playlist {
+    display: flex;
+    flex-direction: row;
+}
+
+section.playlist .playlist-right-side {
+    width: 50vw;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+}
+
+section.playlist .playlist-right-side img {
+    width: 100%;
 }
