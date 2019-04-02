@@ -3,6 +3,16 @@ body {
     padding: 0;
 }
 
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    margin: 0;
+    list-style-type: none;
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -24,15 +34,83 @@ footer {
 section.playlist {
     display: flex;
     flex-direction: row;
+    padding-top: 10vh;
 }
 
 section.playlist .playlist-right-side {
     width: 50vw;
     position: fixed;
     right: 0;
-    top: 10vh;
+}
+
+section.playlist .playlist-left-side {
+    width: 50vw;
 }
 
 section.playlist .playlist-right-side img {
     width: 100%;
+}
+
+section.playlist .left-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-right: 2vw;
+}
+section.playlist .left-title h2, section.playlist .left-title h1 {
+    margin: 0;
+} 
+
+section.playlist .left-title h2 {
+    font-family: HelveticaUltraLight;
+    font-size: 10vw;
+    line-height: 9vw;
+    font-weight: 100;
+    color: #FF7300;
+}
+
+section.playlist .left-title h1 {
+    font-family: HelveticaMedium;
+    font-size: 10vw;
+    line-height: 10vw;
+    text-transform: uppercase;
+}
+
+.music-list {
+    border-top: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-list .ml-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.audio-title {
+    font-family: HelveticaRegular;
+    width: 40vw;
+    text-align: end;
+}
+
+p.audio-title span {
+    color: #FF7300;
+    font-weight: 400;
+}
+
+audio {
+    width: 40vw;
+}
+
+.years {
+    display: flex;
+    justify-content: space-around;
+    font-family: HelveticaLight;
+    position: absolute;
+    top: -18px;
+    right: 39px;
+    font-size: 5vw;
 }
