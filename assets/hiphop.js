@@ -4,6 +4,7 @@ function dd(el) {
 
 let hiphopDude = document.getElementById('hiphop-dude');
 let playlist = document.getElementById('playlist');
+let years = document.getElementById('years');
 
 const playlistHeight = playlist.offsetHeight;
 const bottomHeightOfDude = window.innerHeight - hiphopDude.offsetHeight;
@@ -25,14 +26,15 @@ window.onscroll = function (e) {
         hiphopDude.style.position = 'relative';
         hiphopDude.style.display = 'flex';
         hiphopDude.style.alignItems = 'flex-end';
+        hiphopDude.style.left = 0 + 'vw';
+        years.style.position = 'absolute';
+        years.style.display = 'flex';
+        years.style.alignItems = 'flex-end';
+        years.style.bottom = 43 + 'vh';
     }
 
     if (bottomHeightOfDude + 200 <= musicList.getBoundingClientRect().bottom && nextPosition > document.documentElement.scrollTop) {
         hiphopDude.style.position = 'fixed';
-        hiphopDude.style.right = 0;
-        // hiphopDude.style.bottom = 0;
+        hiphopDude.style.left = 50 + 'vw';
     }
 }
-
-dd(window.innerHeight);
-dd(musicList.getBoundingClientRect().bottom);
