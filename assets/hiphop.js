@@ -8,9 +8,13 @@ let preloaderIcon = document.getElementById('preloaderIcon');
 let preloadTimeout = 4000;
 
 let counter = 0;
-window.scroll(0,0);
-setInterval(preloaderRotation, 200)
 
+$("html, body").animate({
+    scrollTop: 0
+}, 300);  
+preloader.style.top = 0;
+setInterval(preloaderRotation, 200)
+// todo stop this
 function preloaderRotation() {
     counter += 45;
     preloaderIcon.style.transform = 'rotate(' + counter + 'deg)';
@@ -23,8 +27,9 @@ setTimeout(function () {
 }, preloadTimeout);
 
 
-
+window.scroll(0,0); // нужно!! если юзер покрутит во время лоадинга
 setTimeout(function () {
+    window.scroll(0,0);
     let hiphopDude = document.getElementById('hiphop-dude');
     let playlist = document.getElementById('playlist');
     let years = document.getElementById('years');

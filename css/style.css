@@ -129,6 +129,8 @@ audio {
 }
 
 .preloader {
+    top: -100vh;
+    transition: .5s;
     opacity: 1;
     color: #fff;
     position: absolute;
