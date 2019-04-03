@@ -10,60 +10,66 @@
 </head>
 
 <body>
-  <section class="playlist">
-    <div class="playlist-left-side" id="playlist">
-      <div class="left-title" id="leftSideTitleBlock">
-        <h2 id="firstTitleWord">What's</h2>
-        <h1 id="secondTitleWord">up?</h1>
+  <div class="preloader" id="preloader">
+    <h1>tastes better with <span>orange</span> juice</h1>
+    <img src="./img/preload-03.svg" alt="orange" id="preloaderIcon">
+  </div>
+  <div class="page-content" id="pageContent">
+    <section class="playlist">
+      <div class="playlist-left-side" id="playlist">
+        <div class="left-title" id="leftSideTitleBlock">
+          <h2 id="firstTitleWord">What's</h2>
+          <h1 id="secondTitleWord">up?</h1>
+        </div>
+        <ul class="music-list" id="musicList">
+          <li class="ml-item">
+            <p class="audio-title"><span>Lo</span> - Luchini Aka This Is It</p>
+            <audio controls>
+              <source src="./hiphop/Camp Lo - Luchini Aka This Is It.mp3" type="audio/mpeg">
+            </audio>
+          </li>
+          <li class="ml-item">
+            <p class="audio-title"><span>InI, Pete Rock</span> - Grown Man Sport</p>
+            <audio controls>
+              <source src="./hiphop/InI, Pete Rock - Grown Man Sport.mp3" type="audio/mpeg">
+            </audio>
+          </li>
+          <li class="ml-item">
+            <p class="audio-title"><span>Mos Def</span> - Mathematics</p>
+            <audio controls>
+              <source src="./hiphop/Mos Def - Mathematics.mp3" type="audio/mpeg">
+            </audio>
+          </li>
+          <li class="ml-item">
+            <p class="audio-title"><span>A Tribe Called Quest</span> - Electric Relaxation (Relax Yourself Girl).mp3</p>
+            <audio controls>
+              <source src="./hiphop/A Tribe Called Quest - Electric Relaxation (Relax Yourself Girl).mp3"
+                type="audio/mpeg">
+            </audio>
+          </li>
+          <li class="ml-item">
+            <p class="audio-title"><span>Artifacts</span> - C'Mon wit da Git Down.mp3</p>
+            <audio controls>
+              <source src="./hiphop/Artifacts - C'Mon wit da Git Down.mp3" type="audio/mpeg">
+            </audio>
+          </li>
+        </ul>
       </div>
-      <ul class="music-list" id="musicList">
-        <li class="ml-item">
-          <p class="audio-title"><span>Lo</span> - Luchini Aka This Is It</p>
-          <audio controls>
-            <source src="./hiphop/Camp Lo - Luchini Aka This Is It.mp3" type="audio/mpeg">
-          </audio>
-        </li>
-        <li class="ml-item">
-          <p class="audio-title"><span>InI, Pete Rock</span> - Grown Man Sport</p>
-          <audio controls>
-            <source src="./hiphop/InI, Pete Rock - Grown Man Sport.mp3" type="audio/mpeg">
-          </audio>
-        </li>
-        <li class="ml-item">
-          <p class="audio-title"><span>Mos Def</span> - Mathematics</p>
-          <audio controls>
-            <source src="./hiphop/Mos Def - Mathematics.mp3" type="audio/mpeg">
-          </audio>
-        </li>
-        <li class="ml-item">
-          <p class="audio-title"><span>A Tribe Called Quest</span> - Electric Relaxation (Relax Yourself Girl).mp3</p>
-          <audio controls>
-            <source src="./hiphop/A Tribe Called Quest - Electric Relaxation (Relax Yourself Girl).mp3"
-              type="audio/mpeg">
-          </audio>
-        </li>
-        <li class="ml-item">
-          <p class="audio-title"><span>Artifacts</span> - C'Mon wit da Git Down.mp3</p>
-          <audio controls>
-            <source src="./hiphop/Artifacts - C'Mon wit da Git Down.mp3" type="audio/mpeg">
-          </audio>
-        </li>
-      </ul>
-    </div>
-    <div class="playlist-right-side" id="hiphop-dude">
-      <img src="./img/hipHop.svg" alt="hip hop">
-      <div class="years" id="years">
-        <p><span id="hipHopMusicPeriodYear">7</span>0's</p>
+      <div class="playlist-right-side" id="hiphop-dude">
+        <img src="./img/hipHop.svg" alt="hip hop">
+        <div class="years" id="years">
+          <p><span id="hipHopMusicPeriodYear">7</span>0's</p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="logo">
-      <img src="./img/logo.svg" alt="uta">
-    </div>
-    <p class="footer-text">UTA prod.</p>
-  </footer>
+    <footer>
+      <div class="logo">
+        <img src="./img/logo.svg" alt="uta">
+      </div>
+      <p class="footer-text">UTA prod.</p>
+    </footer>
+  </div>
   <script src="./assets/hiphop.js"></script>
   <script src="./assets/player.js"></script>
 </body>

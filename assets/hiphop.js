@@ -2,13 +2,26 @@ function dd(el) {
     console.log(el);
 }
 
-document.body.style.backgroundColor = "red";
-document.body.style.opacity = 0;
+let preloader = document.getElementById('preloader');
+let pageContent = document.getElementById('pageContent');
+let preloaderIcon = document.getElementById('preloaderIcon');
+let preloadTimeout = 4000;
+
+let counter = 0;
+setInterval(preloaderRotation, 200)
+
+function preloaderRotation() {
+    counter += 45;
+    preloaderIcon.style.transform = 'rotate(' + counter + 'deg)';
+}
 
 setTimeout(function () {
-    document.body.style.backgroundColor = "";
-    document.body.style.opacity = 1;
-}, 5000);
+    pageContent.style.opacity = 1;
+    preloader.style.opacity = 0;
+    pageContent.style.transition = '0.6s';
+}, preloadTimeout);
+
+
 
 setTimeout(function () {
     let hiphopDude = document.getElementById('hiphop-dude');
@@ -66,4 +79,4 @@ setTimeout(function () {
             hiphopDude.style.left = 50 + 'vw';
         }
     }
-}, 5000);
+}, preloadTimeout);

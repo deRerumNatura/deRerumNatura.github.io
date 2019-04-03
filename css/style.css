@@ -68,7 +68,6 @@ section.playlist .left-title h2 {
     line-height: 9vw;
     font-weight: 100;
     color: #FF7300;
-
     position: absolute;
     top: -20vh;
 }
@@ -78,7 +77,6 @@ section.playlist .left-title h1 {
     font-size: 10vw;
     line-height: 10vw;
     text-transform: uppercase;
-
     position: absolute;
     left: -20vw;
 }
@@ -128,4 +126,36 @@ audio {
 
 .years p span {
     color: #FF7300;
+}
+
+.preloader {
+    opacity: 1;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: HelveticaUltraLight;
+}
+
+.preloader img{
+    height: 20vh;
+}
+
+.preloader h1 {
+    color: black;
+}
+
+.preloader span {
+    color: #FF7300;
+    font-family: HelveticaRegular;
+}
+
+.page-content {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
 }
