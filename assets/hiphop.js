@@ -8,6 +8,7 @@ let preloaderIcon = document.getElementById('preloaderIcon');
 let preloadTimeout = 4000;
 
 let counter = 0;
+window.scroll(0,0);
 setInterval(preloaderRotation, 200)
 
 function preloaderRotation() {
