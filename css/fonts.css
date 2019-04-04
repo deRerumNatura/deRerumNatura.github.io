@@ -27,13 +27,3 @@
     font-family: HelveticaHeavy;
     src: url(../fonts/HelveticaHeavy/HelveticaHeavy.woff);
   }
-
-  @font-face {
-    font-family: ;
-    src: url(../fonts/);
-  }
-
-  @font-face {
-    font-family: ;
-    src: url(../fonts);
-  }

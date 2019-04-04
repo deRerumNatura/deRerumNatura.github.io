@@ -11,7 +11,7 @@ let counter = 0;
 
 $("html, body").animate({
     scrollTop: 0
-}, 300);  
+}, 500);  
 preloader.style.top = 0;
 setInterval(preloaderRotation, 200)
 // todo stop this
@@ -48,7 +48,7 @@ setTimeout(function () {
     setTimeout(function () {
         hiphopDude.style.left = '50vw';
         hiphopDude.style.transition = '2s';
-    }, 2000);
+    }, 1000);
 
 
 
