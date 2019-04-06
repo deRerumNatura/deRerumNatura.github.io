@@ -9,12 +9,20 @@ let preloadTimeout = 4000;
 
 let counter = 0;
 
+////////////////////////////////////
+// Scroll to top after page refresh
+////////////////////////////////////
+
 $("html, body").animate({
     scrollTop: 0
-}, 500);  
+}, 500);
+
+///////////////////////
+// Preloader animation
+///////////////////////
 preloader.style.top = 0;
-setInterval(preloaderRotation, 200)
-// todo stop this
+let preloaderTimer = setInterval(preloaderRotation, 200)
+
 function preloaderRotation() {
     counter += 45;
     preloaderIcon.style.transform = 'rotate(' + counter + 'deg)';
@@ -27,11 +35,15 @@ setTimeout(function () {
 }, preloadTimeout);
 
 
-window.scroll(0,0); // нужно!! если юзер покрутит во время лоадинга
+/////////////////////////////////////////
+// HipHopDude and header title animation
+/////////////////////////////////////////
+
+window.scroll(0, 0); // If user scrolling during preloading
 setTimeout(function () {
-    window.scroll(0,0);
+    clearInterval(preloaderTimer);
+    window.scroll(0, 0);
     let hiphopDude = document.getElementById('hiphop-dude');
-    let playlist = document.getElementById('playlist');
     let years = document.getElementById('years');
 
     let firstTitleWord = document.getElementById('firstTitleWord');
@@ -50,9 +62,10 @@ setTimeout(function () {
         hiphopDude.style.transition = '2s';
     }, 1000);
 
+    /////////////////////////////////////////
+    // Sets bottom height under HipHopdude
+    /////////////////////////////////////////
 
-
-    const playlistHeight = playlist.offsetHeight;
     const bottomHeightOfDude = window.innerHeight - hiphopDude.offsetHeight;
 
     let leftSideTitleBlock = document.getElementById('leftSideTitleBlock');
@@ -60,6 +73,10 @@ setTimeout(function () {
 
     let musicList = document.getElementById('musicList');
     musicList.style.paddingTop = window.innerHeight - hiphopDude.offsetHeight + "px";
+
+    /////////////////////////////////////////
+    // HipHopDude stoping process at footer
+    /////////////////////////////////////////
 
     window.onscroll = function (e) {
         hiphopDude.style.transition = '';

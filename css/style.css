@@ -4,6 +4,10 @@ body {
     font-family: HelveticaRegular;
 }
 
+span {
+    color: #FF7300;
+}
+
 ul {
     margin: 0;
     padding-left: 0;
@@ -96,14 +100,16 @@ section.playlist .left-title h1 {
 
 .music-list .ml-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    align-items: flex-end;
 }
 
 p.audio-title {
     font-family: HelveticaRegular;
     width: 40vw;
     text-align: end;
+    font-weight: 1000;
+    font-size: 1.2em;
 }
 
 p.audio-title span {
@@ -203,13 +209,17 @@ audio {
 }
 
 .year-stroke {
-    height: 2vh;
-    width: 40vw;
-    border-top: 2px black solid;
+    height: 1vh;
+    width: 90px;
+    border-bottom: 13px black solid;
+    margin-bottom: 3vh;
 }
 
 h1.music-historical-period {
-    letter-spacing: 15px;
+    letter-spacing: 5px;
+    margin: 5vh 0 1vh 0;
+    font-size: 2em;
+    font-family: HelveticaRegular;
 }
 
 h1.music-historical-period span {
