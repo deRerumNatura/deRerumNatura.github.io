@@ -211,7 +211,7 @@ audio {
 .year-stroke {
     height: 1vh;
     width: 90px;
-    border-bottom: 13px black solid;
+    border-bottom: 5px black solid;
     margin-bottom: 3vh;
 }
 
